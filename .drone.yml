@@ -3,8 +3,15 @@ type: docker
 name: default
 
 steps:
-- name: test
-  image: alpine
-  commands:
-  - echo hello
-  - echo world
+  - name: test
+    image: alpine
+    commands:
+    - echo hello
+    - echo world
+
+  - name: deploy
+    image: alpine
+    commands:
+      - echo deploiement en cours
+      - echo deploiement fin
+  
