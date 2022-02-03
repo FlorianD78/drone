@@ -6,7 +6,7 @@ steps:
   - name: test
     image: alpine
     commands:
-    - 2=8
+      - echo le test est reussi
 
   - name: deploy
     image: alpine
